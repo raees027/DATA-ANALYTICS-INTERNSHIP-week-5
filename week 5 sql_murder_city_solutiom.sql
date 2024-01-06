@@ -1,0 +1,27 @@
+use mdb;
+show tables;
+select * from crime_scene_report where city='SQL City' and date=20180115;
+select * from person where address_street_name='Northwestern Dr' ORDER BY address_number; 
+select * from person where address_street_name='Franklin Ave' and name like 'Annabel%';
+select * from person where address_number=4919;
+SELECT * from interview where person_id=14887;
+SELECT * from interview where person_id=16371;
+select * from get_fit_now_member where membership_status='gold' and id like "48Z%" ;
+select * from get_fit_now_check_in where membership_id like '48Z%' order by check_in_time;
+select * from drivers_license where plate_number like '%H42W%';
+select * from person where license_id=423327;
+select * from get_fit_now_check_in where check_in_date=20180109 order by check_in_time;
+select * from get_fit_now_member where name='Annabel Miller';
+select * from person where name='Jeremy Bowers';
+select * from get_fit_now_check_in where membership_id='48Z55';
+select * from facebook_event_checkin where person_id=67318;
+select * from facebook_event_checkin where date=20171206;
+SELECT * from person where id=99716;
+select *from income where ssn=871539279;
+select *from income where ssn=987756388;
+select * from solution;
+ALTER TABLE solution
+MODIFY COLUMN user int(10); 
+insert into solution  values (1,'Jeremy Bowers');
+insert into solution  values (2,'Miranda Priestly');
+select value from solution;
