@@ -16,9 +16,13 @@ select * from person where name='Jeremy Bowers';
 select * from get_fit_now_check_in where membership_id='48Z55';
 select * from facebook_event_checkin where person_id=67318;
 select * from facebook_event_checkin where date=20171206;
+select * from facebook_event_checkin where person_id=99716;
 SELECT * from person where id=99716;
 select *from income where ssn=871539279;
 select *from income where ssn=987756388;
+select * from interview where person_id=67318 ;
+select * from drivers_license where hair_color='red' and car_make='Tesla';
+select * from drivers_license where id=202298;
 select * from solution;
 ALTER TABLE solution
 MODIFY COLUMN user int(10); 
